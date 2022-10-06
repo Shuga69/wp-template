@@ -1,0 +1,61 @@
+.text {
+    &-center {
+        text-align: center;
+    }
+
+    &-uppercase {
+        text-transform: uppercase;
+    }
+
+    &-xs {
+        font-size: 0.667em;
+    }
+
+    &-sm {
+        font-size: 0.778em;
+    }
+
+    &-md {
+        font-size: 0.833em;
+    }
+
+    &-lg {
+        font-size: 0.889em;
+    }
+
+    &-xl {
+        font-size: 1em;
+    }
+}
+
+.sm-max\:text {
+    @include max-w-sm {
+        &-left {
+            text-align: left;
+        }
+
+        &-center {
+            text-align: center;
+        }
+
+        &-xs {
+            font-size: 0.875em;
+        }
+
+        &-sm {
+            font-size: 1em;
+        }
+
+        &-md {
+            font-size: 1.125em;
+        }
+
+        &-lg {
+            font-size: 1.25em;
+        }
+
+        &-xxl {
+            font-size: 1.625em;
+        }
+    }
+}

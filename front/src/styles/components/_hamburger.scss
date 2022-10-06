@@ -1,0 +1,101 @@
+.hamburger {
+    position: relative;
+    width: 18px;
+    height: 12px;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0;
+    outline: none;
+    border: none;
+
+    &.is-active {
+        position: absolute;
+        top: 20px;
+        right: 6px;
+
+        & > span {
+            transform: rotate(45deg);
+            width: 16px;
+
+            &::before {
+                top: 0;
+                transform: rotate(0deg);
+                width: 16px;
+            }
+
+            &::after {
+                top: 0;
+                transform: rotate(90deg);
+                width: 16px;
+            }
+
+            @include min-w-sm {
+                width: 27px;
+
+                &::before {
+                    width: 27px;
+                }
+
+                &::after {
+                    width: 27px;
+                }
+            }
+        }
+    }
+}
+
+.hamburger > span {
+    width: 18px;
+    right: 0;
+
+    &,
+    &::before,
+    &::after {
+        background: #828ba8;
+        height: 2px;
+        position: absolute;
+        transition-duration: 0.3s;
+        border-radius: 10px;
+        right: 0;
+    }
+
+    &::before {
+        content: "";
+        top: -6px;
+        width: 18px;
+    }
+
+    &::after {
+        content: "";
+        top: 6px;
+        width: 18px;
+    }
+
+    @include min-w-sm {
+        width: 22px;
+        right: 0;
+
+        &,
+        &::before,
+        &::after {
+     
+            height: 2px;
+            position: absolute;
+            transition-duration: 0.3s;
+            border-radius: 10px;
+            right: 0;
+        }
+
+        &::before {
+            content: "";
+            top: -8px;
+            width: 27px;
+        }
+
+        &::after {
+            content: "";
+            top: 8px;
+            width: 27px;
+        }
+    }
+}

@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+/* Fonts */
+$font-primary: "Open Sans", sans-serif;
+
+/* Colors */
+
+/* Text */
+$text-black-100: #3f2d54;
+$gray-blue-100: #636e95;
+$gray-100: #8d8d91;
+$light-gray-100: #cdd0dc;
+$white-100: #ffffff;
+
+/* Icons */
+$green-gradient: linear-gradient(59.98deg, #25cdaf 18.75%, #11b99b 95.03%);
+$red-100: #ff4667;
+$turquoise-100: #5cf7da;
+$bright-purple-100: #6a4de2;
+$dark-blue-100: #828ba8;
+$icon-light-gray-100: #c0c4d3;
+
+/* Accents */
+$purple-gradient: linear-gradient(268.01deg, #8015e8 -7.03%, #670aff 137.11%);
+$main-purple-100: #7a12ef;
+$light-purple-100: #f2e7fd;
+
+/* Accents/States */
+$hover-primary: linear-gradient(268.01deg, #9f3dff -7.03%, #6b47ff 137.11%);
+$hover-tetriary: #f2e7fd;
+$pressed-primary: #914cff;
+$pressed-tetriary: #e8d7fd;
+$visited: #a770ff;
+$disabled: #f1f2fa;
+
+/* Strokes & dividers */
+$black-5: rgba(0, 0, 0, 0.05);
+$white-10: rgba(255, 255, 255, 0.1);
+
+/* Backgrounds */
+$bg-dark-blue-100: #051651;
+$blue-100: #2b3a6f;
+$milk-white-100: #f1f2fa;
+$white-radial-80: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.4) 100%);
+
+/* Backgrounds/Tags */
+$bg-turquoise-100: #26f4ce;
+$bright-purple-100: #7d3fff;
+$bright-blue-100: #4d54ff;
+$turquoise-20: rgba(37, 205, 175, 0.2);
+$red-10: rgba(255, 70, 103, 0.1);
+$turquoise-10: rgba(37, 205, 175, 0.1);
+$bright-purple-100: rgba(125, 63, 255, 0.1);
+$bright-blue-100: rgba(77, 84, 255, 0.1);
+
+/* Overlay */
+$black-60: rgba(40, 40, 40, 0.6);
+$black-10: rgba(40, 40, 40, 0.1);
+$black-gradient: linear-gradient(10.85deg, rgba(40, 40, 40, 0.5) 7.43%, rgba(40, 40, 40, 0) 91.34%);
+
+/* Shadow */
+$shadow-lvl-1: 0 5px 20px rgba(0, 0, 0, 0.03);
+$shadow-lvl-2: 0 5px 60px rgba(125, 20, 236, 0.1);
+$shadow-lvl-3: 0 5px 10px rgba(125, 20, 236, 0.05);
+$shadow-lvl-4: 0 5px 20px rgba(125, 20, 236, 0.05);

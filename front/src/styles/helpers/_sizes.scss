@@ -1,0 +1,115 @@
+.min-w {
+    &-0 {
+        min-width: 0;
+    }
+
+    &-128 {
+        min-width: 128px;
+    }
+}
+
+.min-h {
+    &-420 {
+        min-height: 420px;
+    }
+}
+
+.max-h {
+    &-400 {
+        max-height: 400px;
+    }
+}
+
+.max-w {
+    &-250 {
+        max-width: 250px;
+    }
+
+   
+}
+
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.xs\:w-full {
+    @include max-w-xs {
+        width: 100%;
+    }
+}
+
+.sm-max\:w-full {
+    @include max-w-sm {
+        width: 100%;
+    }
+}
+
+.lg-max\:w-full {
+    @include max-w-lg {
+        width: 100%;
+    }
+}
+
+.sm-max\:max-w {
+    @include max-w-sm {
+        &-none {
+            max-width: none;
+        }
+
+        &-200 {
+            max-width: 200px;
+        }
+
+        &-0 {
+            min-width: 0;
+        }
+    }
+}
+
+.md-max\:max-w {
+    @include max-w-md {
+        &-400 {
+            max-width: 400px;
+        }
+
+        &-340 {
+            max-width: 340px;
+        }
+    }
+}
+
+.md-max\:min-w {
+    @include max-w-md {
+        &-0 {
+            min-width: 0;
+        }
+
+        &-340 {
+            min-width: 340px;
+        }
+    }
+}
+
+.sm-max\:min-w {
+    @include max-w-sm {
+        &-0 {
+            min-width: 0;
+        }
+    }
+}
+
+.xs-max\:max-w {
+    @include max-w-xs {
+        &-none {
+            max-width: none;
+        }
+
+        &-280 {
+            max-width: 280px;
+        }
+    }
+}

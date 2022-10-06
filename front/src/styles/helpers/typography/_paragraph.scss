@@ -1,0 +1,52 @@
+.p {
+    &-primary {
+        @include min-w-md {
+            font-size: 1.111em;
+        }
+
+        font-weight: 400;
+        font-size: 0.938em;
+        line-height: 170%;
+        // color: $gray;
+    }
+
+    &-secondary {
+        @include min-w-md {
+            font-size: 1em;
+        }
+
+        font-size: 0.813em;
+        font-weight: 400;
+        line-height: 167%;
+    }
+
+    &-tertiary {
+        @include min-w-md {
+            font-size: 0.889em;
+        }
+
+        font-size: 0.75em;
+        font-weight: 600;
+        line-height: 162%;
+    }
+
+    &-tertiary-2 {
+        @include min-w-md {
+            font-size: 0.889em;
+        }
+
+        font-size: 0.75em;
+        font-weight: 400;
+        line-height: 162%;
+    }
+
+    &-quaternary {
+        @include min-w-md {
+            font-size: 0.778em;
+        }
+
+        font-size: 0.688em;
+        font-weight: 400;
+        line-height: 157%;
+    }
+}

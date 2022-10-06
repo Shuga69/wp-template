@@ -1,0 +1,27 @@
+.header {
+    transition: 0.3s;
+    position: fixed;
+    z-index: 15;
+    width: 100%;
+    top: 20px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__inner {
+        width: 100%;
+    }
+
+    // &.scroll-down {
+    //     transform: translate3d(0, -100%, 0);
+    // }
+
+    // &.scroll-up {
+    //     transform: none;
+    //     // background-color: $bg-dark;
+    //     // background-image: url("../images/starlight-bg.png");
+    //     background-position: top;
+    // }
+}
+

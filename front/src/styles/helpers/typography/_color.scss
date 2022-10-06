@@ -1,0 +1,17 @@
+.color {
+    &-white {
+        color: $white-100;
+    }
+
+    &-gray {
+        color: $light-gray-100;
+    }
+
+    &-gray-blue {
+        color: $gray-blue-100;
+    }
+
+    &-black {
+        color: $text-black-100;
+    }
+}

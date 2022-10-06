@@ -1,0 +1,22 @@
+.grid {
+    display: grid;
+    grid-auto-columns: auto;
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto;
+
+    &__holder {
+        grid-column: span 2;
+        grid-row: auto;
+    }
+
+    &__btn {
+        @include max-w-sm {
+            grid-column: span 2;
+            grid-row: span 1;
+            order: 3;
+        }
+    }
+}
+

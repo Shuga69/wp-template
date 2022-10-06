@@ -1,0 +1,23 @@
+.navbar {
+    &__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 1240px;
+        width: 81.11%;
+        margin: 0 auto;
+        padding: 20px 20px;
+        background: rgba(241, 242, 250, 0.1);
+        border: 0.4px solid $white-100;
+        border-radius: 20px;
+ 
+
+    &__toggler {
+        @include min-w-sm {
+            display: none;
+        }
+
+        z-index: 20;
+    }
+}
+

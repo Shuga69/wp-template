@@ -1,0 +1,17 @@
+.slider-wrap {
+    overflow-x: hidden;
+    margin-right: -20px;
+    position: relative;
+
+    & .swiper-container {
+        padding-right: 22px;
+        padding-left: 22px;
+
+        @include max-w-1096 {
+            padding-right: 22px;
+            padding-left: 0;
+        }
+    }
+}
+
+

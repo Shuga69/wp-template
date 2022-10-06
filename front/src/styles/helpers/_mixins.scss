@@ -1,0 +1,175 @@
+// Responsive font-size
+@mixin responsive-fz($max-size, $min-size, $max-width: 1365, $min-width: 320) {
+    $add-size: $max-size - $min-size;
+    $max-width: $max-width - 320;
+
+    font-size: calc(#{$min-size + px} + #{$add-size} * ((100vw - #{$min-width + px}) / #{$max-width}));
+}
+
+// Fade-out
+@mixin fade-out($time, $delay) {
+    transition: opacity $time 0s, visibility 0s $delay, z-index 0s $delay;
+}
+
+// Fade-in
+@mixin fade-in($time, $delay: 0s) {
+    transition: opacity $time 0s, visibility 0s $delay, z-index 0s $delay;
+}
+
+// Placeholder
+@mixin placeholder {
+    &::placeholder {
+        @content;
+    }
+
+    &::-moz-placeholder {
+        @content;
+    }
+
+    &::-ms-input-placeholder {
+        @content;
+    }
+
+    &::-webkit-input-placeholder {
+        @content;
+    }
+}
+
+// Indents
+$spaces: (10, 15);
+$sides: (
+    "top": "t",
+    "right": "r",
+    "bottom": "b",
+    "left": "l",
+);
+
+@each $space in $spaces {
+    @each $side, $letter in $sides {
+        .m#{$letter}-#{$space} {
+            margin-#{$side}: #{$space}px;
+        }
+
+        .p#{$letter}-#{$space} {
+            padding-#{$side}: #{$space}px;
+        }
+        .#{$letter}-#{$space} {
+            #{$side}: #{$space}px;
+        }
+    }
+}
+
+// mq max
+@mixin max-w-2xs {
+    @media (max-width: 360px) {
+        @content;
+    }
+}
+
+@mixin max-w-xs {
+    @media (max-width: 479px) {
+        @content;
+    }
+}
+
+@mixin max-w-sm {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin max-w-md {
+    @media (max-width: 991px) {
+        @content;
+    }
+}
+
+@mixin max-w-1096 {
+    @media (max-width: 1096px) {
+        @content;
+    }
+}
+
+@mixin max-w-lg {
+    @media (max-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin max-w-xl {
+    @media (max-width: 1373px) {
+        @content;
+    }
+}
+
+// mq min
+@mixin min-w-2xs {
+    @media (min-width: 360px) {
+        @content;
+    }
+}
+
+@mixin min-w-xs {
+    @media (min-width: 479px) {
+        @content;
+    }
+}
+
+@mixin min-w-sm {
+    @media (min-width: 767px) {
+        @content;
+    }
+}
+
+@mixin min-w-md {
+    @media (min-width: 991px) {
+        @content;
+    }
+}
+
+@mixin min-w-lg {
+    @media (min-width: 1199px) {
+        @content;
+    }
+}
+
+@mixin min-w-xl {
+    @media (min-width: 1373px) {
+        @content;
+    }
+}
+
+@each $space in $spaces {
+    @each $side, $letter in $sides {
+        @include max-w-lg {
+            .lg-max\:m#{$letter}-#{$space} {
+                margin-#{$side}: #{$space}px;
+            }
+        }
+
+        @include max-w-md {
+            .md-max\:m#{$letter}-#{$space} {
+                margin-#{$side}: #{$space}px;
+            }
+        }
+
+        @include max-w-sm {
+            .sm-max\:m#{$letter}-#{$space} {
+                margin-#{$side}: #{$space}px;
+            }
+
+            .sm-max\:p#{$letter}-#{$space} {
+                padding-#{$side}: #{$space}px;
+            }
+            .sm-max\:#{$letter}-#{$space} {
+                #{$side}: #{$space}px;
+            }
+        }
+
+        @include max-w-xs {
+            .xs-max\:m#{$letter}-#{$space} {
+                margin-#{$side}: #{$space}px;
+            }
+        }
+    }
+}

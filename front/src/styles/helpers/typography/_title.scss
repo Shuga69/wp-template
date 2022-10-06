@@ -1,0 +1,58 @@
+h1 {
+    @include responsive-fz(64, 44);
+
+    line-height: 100%;
+    font-weight: 600;
+    color: $text-black-100;
+}
+
+h2 {
+    @include responsive-fz(50, 32);
+
+    line-height: 130%;
+    font-weight: 600;
+    color: $text-black-100;
+}
+
+h3 {
+    @include responsive-fz(36, 24);
+
+    line-height: 130%;
+    font-weight: 600;
+}
+
+h4 {
+    @include responsive-fz(28, 22);
+
+    line-height: 130%;
+    font-weight: 600;
+}
+
+h5 {
+    @include responsive-fz(20, 20);
+
+    line-height: 130%;
+    font-weight: 600;
+}
+
+@include min-w-xl {
+    h1 {
+        font-size: 64px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    h3 {
+        font-size: 36px;
+    }
+
+    h4 {
+        font-size: 28px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+}

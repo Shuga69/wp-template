@@ -1,0 +1,38 @@
+.mt-auto {
+    margin-top: auto;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.indent {
+    &-b {
+        @include min-w-md {
+            margin-bottom: 10em;
+        }
+
+        margin-bottom: 4em;
+    }
+
+    &-t {
+        @include min-w-md {
+            margin-top: 7.5em;
+        }
+
+        margin-top: 4em;
+
+        &-title {
+            margin-top: 8.75em;
+
+            @include min-w-md {
+                margin-top: 19.25em;
+            }
+        }
+    }
+}
