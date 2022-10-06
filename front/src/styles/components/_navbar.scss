@@ -10,14 +10,13 @@
         background: rgba(241, 242, 250, 0.1);
         border: 0.4px solid $white-100;
         border-radius: 20px;
- 
 
-    &__toggler {
-        @include min-w-sm {
-            display: none;
+        &__toggler {
+            @include min-w-sm {
+                display: none;
+            }
+
+            z-index: 20;
         }
-
-        z-index: 20;
     }
 }
-

@@ -14,7 +14,6 @@ export default class Slider {
             const Swiper = module.default;
             Swiper.use([Navigation, Pagination]);
             const $slider = this.$slider;
-            console.log(navigation($slider));
             this.swiper = new Swiper($slider, {
                 spaceBetween: Number(spaceMobile),
                 slidesPerView: 'auto',

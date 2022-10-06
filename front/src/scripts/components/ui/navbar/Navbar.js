@@ -20,8 +20,6 @@ export default class Navbar {
             this.$menu.classList.toggle('is-active');
             this.$menu.classList.contains('is-active') ? hiddenScroll() : visibleScroll();
         }
-
-        
     }
 
     destroy() {
